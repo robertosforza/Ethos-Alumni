@@ -7,21 +7,35 @@ async function loadMembers() {
 function renderCards(list) {
   const cards = document.getElementById('cards');
   cards.innerHTML = '';
+
   list.forEach(m => {
     const el = document.createElement('div');
     el.className = 'card';
+
+    // Gestiamo affiliazioni multiple:
+    const allAffiliations = (m.affiliations && m.affiliations.length > 0)
+      ? m.affiliations
+      : (m.affiliation ? [m.affiliation] : []);
+
+    const affiliationsText = allAffiliations.join(' • ');
+
     el.innerHTML = `
       <h3>${m.name}</h3>
-      <p><strong>${m.role}</strong> • ${m.affiliation}</p>
+      <p><strong>${m.role || ''}</strong>${affiliationsText ? ' • ' + affiliationsText : ''}</p>
       <p>${m.location || ''}</p>
       <div class="badges">
         ${(m.areas || []).map(a => `<span class="badge">${a}</span>`).join('')}
       </div>
-      <p><a href="${m.linkedin || '#'}" target="_blank" rel="noopener">LinkedIn</a>${m.email ? ' • <a href="mailto:'+m.email+'">Email</a>' : ''}</p>
+      <p>
+        ${m.linkedin ? `<a href="${m.linkedin}" target="_blank" rel="noopener">LinkedIn</a>` : ''}
+        ${m.email ? `${m.linkedin ? ' • ' : ''}<a href="mailto:${m.email}">Email</a>` : ''}
+      </p>
     `;
+
     cards.appendChild(el);
   });
 }
+
 
 function applyFilters(members) {
   const q = document.getElementById('search').value.toLowerCase().trim();
