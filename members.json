@@ -1,0 +1,29 @@
+{
+  "members": [
+    {
+      "name": "Prof. Sebastiano Maffettone",
+      "role": "Founding Director, ETHOS",
+      "affiliation": "LUISS Business School",
+      "location": "Rome, Italy",
+      "areas": [
+        "Etica e Politica",
+        "Business Ethics"
+      ],
+      "linkedin": "https://www.linkedin.com/",
+      "email": ""
+    },
+    {
+      "name": "Roberto Sforza",
+      "role": "Young ETHOS Joint Managing Director",
+      "affiliation": "ETHOS \u2022 LUISS",
+      "location": "Rome, Italy",
+      "areas": [
+        "AI Ethics",
+        "Etica e Politica",
+        "Etica della Globalizzazione"
+      ],
+      "linkedin": "https://www.linkedin.com/",
+      "email": "roberto@example.com"
+    }
+  ]
+}
