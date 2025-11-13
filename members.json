@@ -3,7 +3,10 @@
     {
       "name": "Prof. Sebastiano Maffettone",
       "role": "Founding Director, ETHOS",
-      "affiliation": "LUISS Guido Carli University",
+      "affiliations": [
+    "ETHOS",
+    "LUISS Guido Carly University",
+  ],
       "location": "Rome, Italy",
       "areas": [
         "Etica e Politica",
@@ -15,7 +18,11 @@
     {
       "name": "Roberto Sforza",
       "role": "Young ETHOS Joint Coordinator",
-      "affiliation": "ETHOS \u2022 LUISS Guido Carli University",
+      "affiliations": [
+    "ETHOS",
+    "LUISS Guido Carly University",
+    "Sciences Po Bordeaux"
+  ],
       "location": "Rome, Italy",
       "areas": [
         "AI Ethics",
@@ -27,7 +34,11 @@
      {
       "name": "Alessandro Jean-Baptiste Franco Bruneau",
       "role": "Young ETHOS Joint Coordinator",
-      "affiliation": "ETHOS \u2022 LUISS Guido Carli University",
+      "affiliations": [
+    "ETHOS",
+    "LUISS Guido Carly University",
+    "Sciences Po Bordeaux"
+  ],
       "location": "Rome, Italy",
       "areas": [
         "AI Ethics",
